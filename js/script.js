@@ -42,8 +42,7 @@ document.querySelector("#dev").addEventListener("click", function() {
 
 
 document.querySelector("#eq").addEventListener("click", function() {
-
-
+    // add a switch case 
     switch (operationMode) {
         case "+":
             newNumber = numberInput.value;
@@ -67,3 +66,6 @@ document.querySelector("#eq").addEventListener("click", function() {
             break;
     }
 });
+document.getElementById("clear").addEventListener("click", function() {
+    numberInput.value = ""
+})
