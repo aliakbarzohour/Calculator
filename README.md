@@ -1,8 +1,11 @@
-# Calculator
-# make calculator whit Html - sass - java script 
-ساختن ماشین حساب زیبا با تم شیشه ای با استفاده از جاوا اسکریپت
+## Calculator
+### make calculator whit Html - sass - java script 
+### ساختن ماشین حساب زیبا با تم شیشه ای با استفاده از جاوا اسکریپت
 
-.........
-Preview 
-.........
-![Preview](https://user-images.githubusercontent.com/71524940/118411762-71369f00-b6ab-11eb-8cf7-1528c1c70239.JPG)
+------------------------------------------------
+
+## Preview : 
+
+![calculator](https://user-images.githubusercontent.com/71524940/124254870-5e065400-dade-11eb-919f-5743ed475c4e.png)
+
+------------------------------------------------
