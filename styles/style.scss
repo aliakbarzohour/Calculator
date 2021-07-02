@@ -14,30 +14,43 @@
     -webkit-backdrop-filter: blur( 2.5px);
     border-radius: 30px;
     border: 1px solid rgba( 255, 255, 255, 0.18);
+    transition: all ease .4s;
+    -webkit-transition: all ease .4s;
+    -moz-transition: all ease .4s;
+    -ms-transition: all ease .4s;
+    -o-transition: all ease .4s;
+    &:focus {
+        box-shadow: inset 0 8px 32px 0 rgba(0, 1, 2, 0.151);
+        transition: all ease .5s;
+        -webkit-transition: all ease .5s;
+        -moz-transition: all ease .5s;
+        -ms-transition: all ease .5s;
+        -o-transition: all ease .5s;
+    }
 }
 
 body {
-    img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: 100%;
-        height: 100%;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../media/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     .calculator {
         font-family: 'Anton', sans-serif;
+        margin-top: 10px;
         h2 {
+            color: white;
+            text-shadow: 0px 2px 20px rgba(0, 0, 0, 0.349);
             text-align: center;
-            font-size: 30px;
-            font-weight: 700;
+            font-size: 40px;
+            font-weight: 500;
         }
-        width: 550px;
+        width: fit-content;
         display: flex;
         flex-direction: column;
         padding: 32px;
-        margin: 80px auto 0 auto;
         @include glasses();
         input {
             @include glasses-btn();
@@ -54,6 +67,7 @@ body {
                 display: flex;
                 flex-wrap: wrap;
                 flex-basis: 80%;
+                justify-content: space-evenly;
                 button {
                     cursor: pointer;
                     padding: 10px;

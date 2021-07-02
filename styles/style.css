@@ -1,16 +1,25 @@
-body img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../media/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 body .calculator {
   font-family: 'Anton', sans-serif;
-  width: 550px;
+  margin-top: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,7 +28,6 @@ body .calculator {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 32px;
-  margin: 80px auto 0 auto;
   background: rgba(255, 255, 255, 0.25);
   -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
           box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -30,9 +38,11 @@ body .calculator {
 }
 
 body .calculator h2 {
+  color: white;
+  text-shadow: 0px 2px 20px rgba(0, 0, 0, 0.349);
   text-align: center;
-  font-size: 30px;
-  font-weight: 700;
+  font-size: 40px;
+  font-weight: 500;
 }
 
 body .calculator input {
@@ -43,11 +53,26 @@ body .calculator input {
   -webkit-backdrop-filter: blur(2.5px);
   border-radius: 30px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all ease .4s;
+  -webkit-transition: all ease .4s;
+  -moz-transition: all ease .4s;
+  -ms-transition: all ease .4s;
+  -o-transition: all ease .4s;
   padding: 10px;
   text-align: center;
   margin: 5px 0px 15px 0;
   font-size: 25px;
   font-weight: 700;
+}
+
+body .calculator input:focus {
+  -webkit-box-shadow: inset 0 8px 32px 0 rgba(0, 1, 2, 0.151);
+          box-shadow: inset 0 8px 32px 0 rgba(0, 1, 2, 0.151);
+  transition: all ease .5s;
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s;
+  -ms-transition: all ease .5s;
+  -o-transition: all ease .5s;
 }
 
 body .calculator .buttons {
@@ -68,6 +93,9 @@ body .calculator .buttons .numbers_button {
       flex-wrap: wrap;
   -ms-flex-preferred-size: 80%;
       flex-basis: 80%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 body .calculator .buttons .numbers_button button {
@@ -84,6 +112,21 @@ body .calculator .buttons .numbers_button button {
   -webkit-backdrop-filter: blur(2.5px);
   border-radius: 30px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all ease .4s;
+  -webkit-transition: all ease .4s;
+  -moz-transition: all ease .4s;
+  -ms-transition: all ease .4s;
+  -o-transition: all ease .4s;
+}
+
+body .calculator .buttons .numbers_button button:focus {
+  -webkit-box-shadow: inset 0 8px 32px 0 rgba(0, 1, 2, 0.151);
+          box-shadow: inset 0 8px 32px 0 rgba(0, 1, 2, 0.151);
+  transition: all ease .5s;
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s;
+  -ms-transition: all ease .5s;
+  -o-transition: all ease .5s;
 }
 
 body .calculator .buttons .operations_button {
@@ -106,9 +149,24 @@ body .calculator .buttons .operations_button .o-b {
   -webkit-backdrop-filter: blur(2.5px);
   border-radius: 30px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all ease .4s;
+  -webkit-transition: all ease .4s;
+  -moz-transition: all ease .4s;
+  -ms-transition: all ease .4s;
+  -o-transition: all ease .4s;
   padding: 10px;
   margin: 7px 0;
   font-weight: 700;
   cursor: pointer;
+}
+
+body .calculator .buttons .operations_button .o-b:focus {
+  -webkit-box-shadow: inset 0 8px 32px 0 rgba(0, 1, 2, 0.151);
+          box-shadow: inset 0 8px 32px 0 rgba(0, 1, 2, 0.151);
+  transition: all ease .5s;
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s;
+  -ms-transition: all ease .5s;
+  -o-transition: all ease .5s;
 }
 /*# sourceMappingURL=style.css.map */
