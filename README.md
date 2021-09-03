@@ -1,6 +1,6 @@
 ## Calculator
 ### make calculator whit Html - sass - java script 
-### ساختن ماشین حساب زیبا با تم شیشه ای با استفاده از جاوا اسکریپت
+### Create beautiful glass-themed calculators using JavaScript
 
 ------------------------------------------------
 
